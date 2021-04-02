@@ -12,12 +12,12 @@ function addBookToLibrary() {
     const a= document.querySelector("#author").value
     const p = document.querySelector("#pgs").value
    const addNewBook = new Book(t,a,p);
-    myLibrary.push(addNewBook);
+    myLibrary.push(addNewBook);   
     displayBooks();
  }
  
  function deleteBook(index){
- myLibrary.splice(index,1);
+ myLibrary.splice(index,1); 
  displayBooks();
  }
  
@@ -37,10 +37,12 @@ function addBookToLibrary() {
    else{
       myLibrary[i].read= true;
    }
+   
    displayBooks()
  }
 
 function displayBooks(){
+       
     let txt="<table><tr><th>Title</th>";
     txt= txt+"<th>Author</th><th>Pages</th><th>Read?</th><th>Delete?</th></tr>";
         for(var i=0; i< myLibrary.length; i++){
@@ -62,3 +64,5 @@ function displayBooks(){
         document.getElementById("btn").style.display="block";
         document.getElementById("frmbtn").style.display="none";
        }
+
+       
