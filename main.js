@@ -23,3 +23,9 @@ function displayBooks(){
         txt=txt+"</table>";
         document.getElementById("distbl").innerHTML= txt;
     }
+
+    function changedisplay(){
+        document.getElementById("frm1").style.display="block";
+        document.getElementById("btn").style.display="block";
+        document.getElementById("frmbtn").style.display="none";
+       }
