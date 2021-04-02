@@ -30,6 +30,7 @@ function displayBooks() {
   document.getElementById('distbl').innerHTML = txt;
 }
 
+/* eslint-disable */
 function addBookToLibrary() {
   const t = document.querySelector('#title').value;
   const a = document.querySelector('#author').value;
@@ -61,3 +62,4 @@ function changedisplay() {
   document.getElementById('btn').style.display = 'block';
   document.getElementById('frmbtn').style.display = 'none';
 }
+/* eslint-enable */
