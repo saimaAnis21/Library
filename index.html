@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Library</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <button onclick="myLibrary.displayBooks()">Display Library</button>
+    <form id="frm1" action="/action_page.php" class="dis">
+        Title: <input type="text" name="ftitle" id="title" value="Art"><br>
+        Author: <input type="text" name="fauthor" id="author" value="picasso"><br>
+        Pages: <input type="text" name="fpgs" id="pgs" value="128"><br><br>
+      
+      </form> 
+      <button id="btn" onclick="myLibrary.addBookToLibrary()" class="dis">Add Books</button>
+      <button id="frmbtn" onclick="changedisplay()">Form</button>
+      <div id="distbl"></div>
+    <script src="main.js"></script>
+  </body>
+  </html>
